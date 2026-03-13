@@ -4,7 +4,7 @@
   "description": "Reset all default style to ZERO.",
   "main": "dist/index.css",
   "scripts": {
-    "minify": "minify index.css > index.min.css",
+    "minify": "cleancss -o index.min.css index.css",
     "prepare": "husky"
   },
   "keywords": [
@@ -17,7 +17,6 @@
   "license": "MIT",
   "packageManager": "pnpm@10.24.0",
   "devDependencies": {
-    "husky": "^9.1.7",
-    "minify": "^15.2.0"
+    "clean-css-cli": "^5.6.3"
   }
 }

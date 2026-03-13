@@ -4,8 +4,7 @@
   "description": "Reset all default style to ZERO.",
   "main": "dist/index.css",
   "scripts": {
-    "minify": "cleancss -o index.min.css index.css",
-    "prepare": "husky"
+    "minify": "cleancss -o index.min.css index.css"
   },
   "keywords": [
     "css",

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zero Style</title>
+    <link rel="alternate stylesheet" href="index.css" id="zero-style-link" />
+    <script>
+      addEventListener("DOMContentLoaded", () => {
+        let isActive = false;
+        const linkElm = document.getElementById("zero-style-link");
+        const toggle = (event) => {
+          if (
+            event.key === "d" &&
+            !event.ctrlKey &&
+            !event.shiftKey &&
+            !event.altKey &&
+            !event.metaKey &&
+            !event.repeat
+          ) {
+            linkElm.rel = isActive ? "alternate stylesheet" : "stylesheet";
+            isActive = !isActive;
+          }
+        };
+        document.addEventListener("keydown", toggle);
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Zero Style</h1>
+    <p>This style sheet hardly resets default style.</p>
+    <p>
+      Press
+      <kbd>d</kbd>
+      to toggle Style.
+    </p>
+    <section>
+      <h2>Phrasing Contents</h2>
+      <p>
+        Zero Style resets <b>bold</b>, <i>italic</i>, <em>emphasized</em> and
+        <strong>strong</strong> text.
+      </p>
+    </section>
+    <section>
+      <h2>Form Contents</h2>
+      <label for="username">Username</label>
+      <input type="text" placeholder="e.g. John Doe" />
+      <label for="password">Password</label>
+      <input type="password" placeholder="e.g. vmeDlf2lkfN" />
+      <button type="submit">Submit</button>
+    </section>
+    <section>
+      <h2>Accessibility</h2>
+      <p>
+        Zero Style resets ALL default styles. So you have to define your own
+        styles for accessibility.
+      </p>
+    </section>
+  </body>
+</html>

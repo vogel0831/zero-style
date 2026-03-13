@@ -1,0 +1,25 @@
+name: Minify CSS
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  minify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      - name: Minify CSS
+        run: pnpm run minify

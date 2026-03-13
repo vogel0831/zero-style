@@ -1,0 +1,95 @@
+:where(*, ::after, ::before) {
+  background-color: #0000;
+  border: none;
+  box-sizing: border-box;
+  content: none;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 15%;
+}
+
+:where(html) {
+  background-color: #fff;
+  color: #000;
+  font:
+    normal normal 400 16px/1 -apple-system,
+    Arial,
+    Roboto,
+    ヒラギノ角ゴシック,
+    "Noto Sans JP",
+    "Noto Sans CJK",
+    MSゴシック,
+    sans-serif;
+  touch-action: manipulation;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: #0001;
+  -webkit-text-size-adjust: 100%;
+}
+
+:where(html, body) {
+  height: 100%;
+  width: 100%;
+}
+
+:where(a, button) {
+  cursor: pointer;
+}
+
+:where(button, input, textarea) {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+:where(code, kbd, samp) {
+  font-family: monospace;
+}
+
+:where(::-webkit-inner-spin-button, ::-webkit-outer-spin-button) {
+  display: none;
+}
+
+:where([type="number"]) {
+  appearance: textfield;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+
+:where(img) {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+:where(table) {
+  border-spacing: 0;
+  width: 100%;
+}
+
+:where(rt) {
+  font-size: 50%;
+  font-weight: 300;
+}
+
+:where(ul) {
+  list-style: none;
+}
+
+:where(:disabled) {
+  cursor: not-allowed;
+}
+
+:where(:focus) {
+  outline: none;
+}
+
+:where(:focus-visible) {
+  outline: solid 2px #06cd;
+}

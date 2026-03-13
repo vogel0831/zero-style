@@ -1,0 +1,23 @@
+{
+  "name": "zero-style",
+  "version": "1.0.0",
+  "description": "Reset all default style to ZERO.",
+  "main": "dist/index.css",
+  "scripts": {
+    "minify": "minify index.css -o index.min.css",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "css",
+    "reset",
+    "zero",
+    "style"
+  ],
+  "author": "vogel0831",
+  "license": "MIT",
+  "packageManager": "pnpm@10.24.0",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "minify": "^15.2.0"
+  }
+}

@@ -1,10 +1,17 @@
 {
-  "name": "zero-style",
+  "name": "@vogel0831/zero-style",
   "version": "1.0.0",
   "description": "Reset all default style to ZERO.",
-  "main": "dist/index.css",
+  "main": "index.css",
+  "files": [
+    "index.css",
+    "index.min.css"
+  ],
   "scripts": {
-    "minify": "cleancss -o index.min.css index.css"
+    "build": "cleancss -o index.min.css index.css"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "css",
@@ -14,7 +21,6 @@
   ],
   "author": "vogel0831",
   "license": "MIT",
-  "packageManager": "pnpm@10.24.0",
   "devDependencies": {
     "clean-css-cli": "^5.6.3"
   }

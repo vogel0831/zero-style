@@ -10,6 +10,10 @@
   "scripts": {
     "build": "cleancss -o index.min.css index.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vogel0831/zero-style.git"
+  },
   "publishConfig": {
     "access": "public"
   },

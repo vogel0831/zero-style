@@ -18,7 +18,7 @@
   },
   "license": "MIT",
   "author": "vogel0831",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.css",
   "files": [
     "index.css",

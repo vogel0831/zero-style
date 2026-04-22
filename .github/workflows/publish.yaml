@@ -13,22 +13,12 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v6
+      - uses: actions/checkout@v6
         with:
           version: latest
-
-      - name: Setup pnpm and install dependencies
-        uses: pnpm/action-setup@v4
+      - uses: oven-sh/setup-bun@v2
         with:
-          version: latest
-          cache: true
-          run_install: true
-
-      - name: Build
-        run: npm run build
-
-      - name: Publish
-        run: npm publish
+          bun-version: latest
+      - run: bun run build
+      - run: bun publish

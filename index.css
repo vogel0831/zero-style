@@ -20,10 +20,10 @@
     normal normal 400 16px/1 -apple-system,
     system-ui,
     BlinkMacSystemFont,
-    "Segoe UI",
+    'Segoe UI',
     Roboto,
     ヒラギノ角ゴシック,
-    "Noto Sans JP",
+    'Noto Sans JP',
     Meiryo,
     sans-serif;
   touch-action: manipulation;
@@ -56,7 +56,7 @@
   display: none;
 }
 
-:where([type="number"]) {
+:where([type='number']) {
   appearance: textfield;
   -moz-appearance: textfield;
   -webkit-appearance: textfield;

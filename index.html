@@ -13,7 +13,7 @@
         const DEFAULT_ELEMENTS = [document.body, null];
         const toggle = (event) => {
           if (
-            event.key === 'Space' &&
+            event.code === 'Space' &&
             DEFAULT_ELEMENTS.includes(document.activeElement) &&
             !event.ctrlKey &&
             !event.shiftKey &&

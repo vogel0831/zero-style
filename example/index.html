@@ -4,36 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zero Style</title>
-    <link rel="alternate stylesheet" href="index.css" id="zero-style-link" />
+    <link
+      rel="alternate stylesheet"
+      href="../src/index.css"
+      id="js-style-link"
+    />
     <script>
-      addEventListener("DOMContentLoaded", () => {
+      addEventListener('DOMContentLoaded', () => {
         let isActive = false;
-        const linkElm = document.getElementById("zero-style-link");
+        const linkElm = document.getElementById('js-style-link');
+        const stateElm = document.getElementById('js-current-style');
+        const DEFAULT_ELEMENTS = [document.body, null];
         const toggle = (event) => {
           if (
-            event.key === "d" &&
+            event.key === 'Space' &&
+            DEFAULT_ELEMENTS.includes(document.activeElement) &&
             !event.ctrlKey &&
             !event.shiftKey &&
             !event.altKey &&
             !event.metaKey &&
             !event.repeat
           ) {
-            linkElm.rel = isActive ? "alternate stylesheet" : "stylesheet";
+            linkElm.rel = isActive ? 'alternate stylesheet' : 'stylesheet';
             isActive = !isActive;
+            stateElm.textContent = isActive ? 'zero-styled' : 'default';
           }
         };
-        document.addEventListener("keydown", toggle);
+        document.addEventListener('keydown', toggle);
       });
     </script>
   </head>
   <body>
     <h1>Zero Style</h1>
-    <p>This style sheet hardly resets default style.</p>
+    <p>This style sheet hardly resets default styles.</p>
     <p>
       Press
-      <kbd>d</kbd>
-      to toggle Style.
+      <kbd>Space</kbd>
+      key to toggle Zero Style.
     </p>
+    <p>Current style: <span id="js-current-style">default</span>.</p>
     <section>
       <h2>Phrasing Contents</h2>
       <p>
@@ -44,10 +53,10 @@
     <section>
       <h2>Form Contents</h2>
       <label for="username">Username</label>
-      <input type="text" placeholder="e.g. John Doe" />
+      <input type="text" name="username" placeholder="Your name" />
       <label for="password">Password</label>
-      <input type="password" placeholder="e.g. vmeDlf2lkfN" />
-      <button type="submit">Submit</button>
+      <input type="password" name="password" placeholder="Your password" />
+      <button type="submit">Signin</button>
     </section>
     <section>
       <h2>Accessibility</h2>

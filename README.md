@@ -34,3 +34,4 @@ import 'zero-style'
 <!-- OR -->
 <link rel="stylesheet" href="https://unpkg.com/zero-style"> 
 ```
+In both cases, do not add a slash at the end. Otherwise, it will not be redirected correctly.

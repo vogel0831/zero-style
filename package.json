@@ -1,7 +1,7 @@
 {
-  "name": "@vogel0831/zero-style",
+  "name": "zero-style",
   "version": "0.1.5",
-  "description": "Reset all default style to ZERO.",
+  "description": "Reset default styles.",
   "keywords": [
     "css",
     "reset",
@@ -12,18 +12,27 @@
   "bugs": {
     "url": "https://github.com/vogel0831/zero-style/issues"
   },
+  "license": "MIT",
+  "author": "vogel0831",
+  "type": "module",
+  "main": "./index.css",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "style": "./index.css",
+      "default": "./index.css"
+    }
+  },
+  "types": "./index.d.ts",
+  "files": [
+    "./index.css",
+    "./index.min.css",
+    "./index.d.ts"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vogel0831/zero-style.git"
   },
-  "license": "MIT",
-  "author": "vogel0831",
-  "type": "module",
-  "main": "index.css",
-  "files": [
-    "index.css",
-    "index.min.css"
-  ],
   "scripts": {
     "build": "cleancss -o index.min.css index.css"
   },
@@ -32,5 +41,8 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "unpkg": "./index.min.css",
+  "jsdelivr": "./index.min.css",
+  "style": "./index.css"
 }

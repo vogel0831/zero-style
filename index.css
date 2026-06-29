@@ -18,13 +18,9 @@
   color: #000;
   font:
     normal normal 400 16px/1 -apple-system,
-    system-ui,
     BlinkMacSystemFont,
-    'Segoe UI',
+    'Segoe UI Variable',
     Roboto,
-    ヒラギノ角ゴシック,
-    'Noto Sans JP',
-    Meiryo,
     sans-serif;
   touch-action: manipulation;
   -moz-osx-font-smoothing: grayscale;

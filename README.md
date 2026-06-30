@@ -15,7 +15,7 @@ Reset most of all styles to Zero. You can try on [Sample Page](https://vogel0831
 
 ### npm or other PM for Node
 ```shell
-npm i zero-ztyle
+npm i zero-style
 # OR
 [pnpm|yarn|deno|bun] add zero-style
 ```

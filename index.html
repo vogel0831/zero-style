@@ -42,8 +42,8 @@
     <section>
       <h2>Phrasing Contents</h2>
       <p>
-        Zero Style resets <b>bold</b>, <i>italic</i>, <em>emphasized</em> and
-        <strong>strong</strong> text.
+        Zero Style resets <b>bold</b>, <i>italic</i>, <em>emphasized</em>,
+        <small>small</small> and <strong>strong</strong> text.
       </p>
     </section>
     <section>
@@ -60,6 +60,14 @@
         Zero Style resets ALL default styles. So you have to define your own
         styles for accessibility.
       </p>
+      <p>
+        You can use the <code>vh</code> class to add accessible labels to
+        elements like icon buttons without breaking their layout.
+      </p>
+      <button>
+        <span aria-hidden="true" role="img">🚀</span>
+        <span class="vh">Get Started</span>
+      </button>
     </section>
   </body>
 </html>

@@ -9,6 +9,7 @@ Reset most of all styles to Zero. You can try on [Sample Page](https://vogel0831
 - Nonunderlined link.
 - No appearances of form part
 - Width of `<img>` limited to 100%
+- `vh` class for Visually Hidden (screen reader only) labels.
 - And other trivial functions
 
 ## Installation

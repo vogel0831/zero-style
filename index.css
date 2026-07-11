@@ -90,3 +90,18 @@
 :where(:focus-visible) {
   outline: solid 2px #06cd;
 }
+
+.vh {
+  border: none !important;
+  display: block !important;
+  height: 4px !important;
+  left: 0px !important;
+  margin: 0 !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: fixed !important;
+  top: 0px !important;
+  visibility: visible !important;
+  width: 4px !important;
+}

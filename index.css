@@ -7,10 +7,8 @@
   font: inherit;
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 15%;
+  text-decoration: inherit;
+  text-decoration-skip-ink: inherit;
 }
 
 :where(html) {
@@ -32,6 +30,11 @@
 :where(html, body) {
   height: 100%;
   width: 100%;
+}
+
+:where(body) {
+  text-decoration: none;
+  text-decoration-skip-ink: none;
 }
 
 :where(a, button) {

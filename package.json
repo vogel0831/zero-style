@@ -12,10 +12,13 @@
   "bugs": {
     "url": "https://github.com/vogel0831/zero-style/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vogel0831/zero-style.git"
+  },
   "license": "MIT",
   "author": "vogel0831",
   "type": "module",
-  "main": "./index.css",
   "exports": {
     ".": {
       "types": "./index.d.ts",
@@ -23,18 +26,19 @@
       "default": "./index.css"
     }
   },
+  "main": "./index.css",
+  "jsdelivr": "./index.min.css",
+  "unpkg": "./index.min.css",
   "types": "./index.d.ts",
+  "style": "./index.css",
   "files": [
     "./index.css",
     "./index.min.css",
     "./index.d.ts"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vogel0831/zero-style.git"
-  },
   "scripts": {
-    "build": "cleancss -o index.min.css index.css"
+    "build": "cleancss -o index.min.css index.css",
+    "release": "if [ $(git branch --show-current) = 'main' ]; then; read -p '? Version: ' v && read -p \"Release $v.\n? message: \" -i '%s' m && bun pm version $v -m $m && git push gh main --tags; else echo 'Branch not main.'; fi"
   },
   "devDependencies": {
     "clean-css-cli": "^5.6.3"
@@ -42,8 +46,5 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  },
-  "unpkg": "./index.min.css",
-  "jsdelivr": "./index.min.css",
-  "style": "./index.css"
+  }
 }

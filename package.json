@@ -38,7 +38,7 @@
   ],
   "scripts": {
     "build": "cleancss -o index.min.css index.css",
-    "release": "if [ $(git branch --show-current) = 'main' ]; then; read -p '? Version: ' v && read -p \"Release $v.\n? message: \" -i '%s' m && bun pm version $v -m $m && git push gh main --tags; else echo 'Branch not main.'; fi"
+    "release": "if [ $(git branch --show-current) = 'main' ];then read -p '? Version: ' v && read -p \"Release $v.\n? message: \" m && bun pm version $v -m ${m:-%s} && git push gh main --tags ;else echo 'Branch not main.' ;fi"
   },
   "devDependencies": {
     "clean-css-cli": "^5.6.3"

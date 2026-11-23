@@ -2,8 +2,8 @@
   background-color: #0000;
   border: none;
   box-sizing: border-box;
-  content: none;
   color: inherit;
+  content: none;
   font: inherit;
   margin: 0;
   padding: 0;
@@ -20,11 +20,11 @@
     'Segoe UI Variable',
     Roboto,
     sans-serif;
-  touch-action: manipulation;
-  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: #0001;
   -webkit-text-size-adjust: 100%;
+  touch-action: manipulation;
 }
 
 :where(html, body) {
@@ -62,7 +62,6 @@
 }
 
 :where(img) {
-  display: block;
   max-width: 100%;
   object-fit: cover;
   pointer-events: none;

@@ -15,6 +15,7 @@ Reset most of all styles to Zero. You can try on [Sample Page](https://vogel0831
 ## Installation
 
 ### npm or other PM for Node
+
 ```shell
 npm i zero-style
 # OR
@@ -24,15 +25,22 @@ npm i zero-style
 ## Usage
 
 ### Webpack with css-loader, Vite
+
 ```javascript
-import 'zero-style'
+import "zero-style";
 ```
 
 ### CDN
+
 ```html
 <!-- Before other styles -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/zero-style"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/zero-style@{version}"> 
 <!-- OR -->
-<link rel="stylesheet" href="https://unpkg.com/zero-style"> 
+<link rel="stylesheet" href="https://unpkg.com/zero-style@{version}">
 ```
-In both cases, do not add a slash at the end. Otherwise, it will not be redirected correctly.
+
+`{version}` represents semver or "latest"
+
+## Changes in v2
+
+For `<img>`, `display` was `block`. It has removed since v2.
